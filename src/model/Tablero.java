@@ -12,7 +12,7 @@ public class Tablero {
         for(int i=0; i<9; i++){
             for(int j = 0; j<9;j++){
                 if((i<6 && i>2)){
-                    mTablero[][] = 
+                    mTablero[][] = '*';
                 }
             }
         }
