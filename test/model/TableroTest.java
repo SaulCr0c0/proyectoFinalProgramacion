@@ -16,29 +16,15 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author ACER
  */
 public class TableroTest {
-    
-    public TableroTest() {
+    @Test
+    public void testGenerarTriangulo(){
+        Tablero tablaPrueba = new Tablero();
+        tablaPrueba.generarTriangulo();
+        
+        
+        assertArrayEquals(new char[]{' ',' ',' ','*',' ',' ',' '}, tablaPrueba.getmTablero()[0]);
+        assertArrayEquals(new char[]{' ',' ','*','*','*',' ',' '}, tablaPrueba.getmTablero()[1]);
+        assertArrayEquals(new char[]{' ','*','*','*','*','*',' '}, tablaPrueba.getmTablero()[2]);
+        assertArrayEquals(new char[]{'*','*','*','*','*','*','*'}, tablaPrueba.getmTablero()[3]);
     }
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }
